@@ -1,0 +1,30 @@
+send_message:
+  name: Send Message
+  description: Send a message to WeCom
+  fields:
+    message:
+      name: Message
+      description: The message content to send
+      required: true
+      example: "Hello from Home Assistant"
+      selector:
+        text:
+    target:
+      name: Target
+      description: Target user ID (touser) or @all
+      required: false
+      example: "userid1|userid2"
+      selector:
+        text:
+
+test_conversation:
+  name: Test Conversation
+  description: Test the conversation agent integration (for debugging)
+  fields:
+    text:
+      name: Text
+      description: The text to send to the conversation agent
+      required: true
+      example: "What's the weather?"
+      selector:
+        text:

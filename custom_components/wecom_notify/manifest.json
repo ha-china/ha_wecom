@@ -1,0 +1,15 @@
+{
+  "domain": "wecom_notify",
+  "name": "企业微信",
+  "version": "3.0.0",
+  "documentation": "https://github.com/Desmond-Dong/wecom_notify",
+  "issue_tracker": "https://github.com/Desmond-Dong/wecom_notify/issues",
+  "codeowners": ["@Desmond-Dong"],
+  "requirements": [],
+  "dependencies": ["conversation"],
+  "after_dependencies": ["conversation"],
+  "config_flow": true,
+  "iot_class": "cloud_push",
+  "integration_type": "hub",
+  "loggers": ["custom_components.wecom_notify"]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "企业微信",
+  "config": {
+    "step": {
+      "user": {
+        "title": "企业微信",
+        "description": "请输入企业微信机器人凭据，并选择 Home Assistant 对话代理。",
+        "data": {
+          "bot_id": "Bot ID",
+          "secret": "Bot Secret",
+          "agent_id": "Conversation Agent"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接失败",
+      "invalid_auth": "凭据无效",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "该 Bot 已配置"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Conversation Agent",
+        "description": "Choose which Home Assistant conversation agent this integration uses.",
+        "data": {
+          "agent_id": "Conversation Agent"
+        }
+      }
+    }
+  },
+  "services": {
+    "send_message": {
+      "name": "发送企业微信消息",
+      "description": "通过企业微信长连接发送消息",
+      "fields": {
+        "message": {
+          "name": "消息内容",
+          "description": "要发送的文本"
+        },
+        "target": {
+          "name": "接收人",
+          "description": "企业微信用户ID（不填默认 @all）"
+        },
+        "touser": {
+          "name": "接收人（别名）",
+          "description": "等价于 target"
+        }
+      }
+    }
+  }
+}

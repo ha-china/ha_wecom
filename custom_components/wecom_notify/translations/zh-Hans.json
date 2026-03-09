@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "企业微信配置",
+        "description": "输入企业微信机器人凭证，并选择 Home Assistant 对话代理。",
+        "data": {
+          "bot_id": "机器人ID",
+          "secret": "密钥",
+          "agent_id": "对话代理"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接企业微信API失败",
+      "invalid_auth": "机器人ID或密钥无效",
+      "unknown": "发生未知错误"
+    },
+    "abort": {
+      "already_configured": "该企业微信机器人已配置"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "对话代理",
+        "description": "选择本集成使用的 Home Assistant 对话代理。",
+        "data": {
+          "agent_id": "对话代理"
+        }
+      }
+    }
+  },
+  "title": "企业微信",
+  "entity": {
+    "notify": {
+      "name": "企业微信"
+    }
+  }
+}
