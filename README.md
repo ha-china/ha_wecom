@@ -10,14 +10,19 @@
 
 ### 第一步：以长连接方式创建智能机器人，获取 Bot ID 和 Secret
 
-1. 在企业微信客户端进入「工作台管理台 -> 智能机器人」，新增机器人并选择 `API` 模式。
+以下截图按官方文档中的顺序展示：
 
-![创建机器人](docs/images/wecom-setup-1-create-bot.png)
-![创建机器人-API模式](docs/images/wecom-setup-3-enter-chat.png)
+1. 在企业微信客户端进入「工作台管理台 -> 智能机器人」，进入创建页面。
 
-2. 在接入方式中选择「长连接」，创建后记录 `Bot ID` 和 `Secret`（后续在 Home Assistant 配置使用）。
+![步骤 1](docs/images/wecom-setup-1-create-bot.png)
 
-![获取 Bot ID 和 Secret](docs/images/wecom-setup-2-bot-id-secret.png)
+2. 新增机器人并选择 `API` 模式，在接入方式中选择「长连接」。
+
+![步骤 2](docs/images/wecom-setup-3-enter-chat.png)
+
+3. 创建完成后，在详情页获取并保存 `Bot ID` 与 `Secret`（后续在 Home Assistant 配置使用）。
+
+![步骤 3](docs/images/wecom-setup-2-bot-id-secret.png)
 
 ## 功能
 
