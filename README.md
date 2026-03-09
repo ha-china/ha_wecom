@@ -4,6 +4,26 @@
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ha-china&repository=ha_wecom&category=integration)
 
+## 企业微信侧设置（先完成）
+
+1. 在企业微信管理后台创建「智能机器人」并开启消息回调能力。
+
+![创建机器人](docs/images/wecom-setup-1-create-bot.png)
+
+2. 进入机器人详情页，记录 `Bot ID` 和 `Secret`（稍后在 Home Assistant 配置中使用）。
+
+![获取 Bot ID 和 Secret](docs/images/wecom-setup-2-bot-id-secret.png)
+
+3. 在机器人会话里先完成一次配对/进入会话（触发 `enter_chat`），确保机器人可收发消息。
+
+![进入会话触发配对](docs/images/wecom-setup-3-enter-chat.png)
+
+4. 回到 Home Assistant 添加本集成，填入 `Bot ID`、`Secret`，并在下拉框选择对话代理（LLM Agent）。
+
+![Home Assistant 配置集成](docs/images/wecom-setup-4-ha-config.png)
+
+> 说明：以上图片路径已预留在 `docs/images/`，可直接替换为你的实际截图文件。
+
 ## 功能
 
 - 纯 Python 实现企业微信长连接（WebSocket），无需 Node.js 运行时。

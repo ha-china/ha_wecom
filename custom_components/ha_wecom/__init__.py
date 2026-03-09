@@ -42,7 +42,7 @@ from .const import (
 )
 
 _LOGGER = logging.getLogger(__name__)
-PLATFORMS = [Platform.NOTIFY]
+PLATFORMS = [Platform.NOTIFY, Platform.SENSOR]
 
 SERVICE_SCHEMA = vol.Schema(
     {
@@ -74,6 +74,14 @@ class WeComWsClient:
 
     def set_message_callback(self, callback: Any) -> None:
         self._message_callback = callback
+
+    @property
+    def is_connected(self) -> bool:
+        return self._ws is not None and not self._ws.closed
+
+    @property
+    def is_authenticated(self) -> bool:
+        return self._authenticated.is_set()
 
     async def start(self) -> None:
         if self._running:
