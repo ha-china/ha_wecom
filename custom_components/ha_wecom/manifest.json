@@ -1,7 +1,7 @@
 {
   "domain": "ha_wecom",
   "name": "企业微信",
-  "version": "3.0.0",
+  "version": "2026.3.0",
   "documentation": "https://github.com/ha-china/ha_wecom",
   "issue_tracker": "https://github.com/ha-china/ha_wecom/issues",
   "codeowners": ["@Desmond-Dong"],
