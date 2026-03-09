@@ -2,7 +2,7 @@
 
 from typing import Final
 
-DOMAIN: Final = "wecom_notify"
+DOMAIN: Final = "ha_wecom"
 
 CONF_BOT_ID: Final = "bot_id"
 CONF_SECRET: Final = "secret"

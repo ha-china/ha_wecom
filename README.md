@@ -1,6 +1,8 @@
 # 企业微信
 
-`wecom_notify` 是一个 Home Assistant 自定义集成，提供企业微信机器人与 Home Assistant 的双向消息能力。
+`ha_wecom` 是一个 Home Assistant 自定义集成，提供企业微信机器人与 Home Assistant 的双向消息能力。
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ha-china&repository=ha_wecom&category=integration)
 
 ## 功能
 
