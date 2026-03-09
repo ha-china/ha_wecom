@@ -6,23 +6,23 @@
 
 ## 企业微信侧设置（先完成）
 
-1. 在企业微信管理后台创建「智能机器人」并开启消息回调能力。
+参考官方文档：<https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657>
+
+1. 在企业微信客户端进入「工作台管理台 -> 智能机器人」，新增机器人并选择 `API` 模式。
 
 ![创建机器人](docs/images/wecom-setup-1-create-bot.png)
 
-2. 进入机器人详情页，记录 `Bot ID` 和 `Secret`（稍后在 Home Assistant 配置中使用）。
+2. 在接入方式中选择「长连接」，创建后记录 `Bot ID` 和 `Secret`（后续在 Home Assistant 配置使用）。
 
 ![获取 Bot ID 和 Secret](docs/images/wecom-setup-2-bot-id-secret.png)
 
-3. 在机器人会话里先完成一次配对/进入会话（触发 `enter_chat`），确保机器人可收发消息。
+3. 给机器人分配可访问范围后，在企业微信中与机器人发起会话，确保会话已建立并可接收消息。
 
 ![进入会话触发配对](docs/images/wecom-setup-3-enter-chat.png)
 
 4. 回到 Home Assistant 添加本集成，填入 `Bot ID`、`Secret`，并在下拉框选择对话代理（LLM Agent）。
 
 ![Home Assistant 配置集成](docs/images/wecom-setup-4-ha-config.png)
-
-> 说明：以上图片路径已预留在 `docs/images/`，可直接替换为你的实际截图文件。
 
 ## 功能
 
