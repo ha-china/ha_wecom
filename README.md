@@ -1,3 +1,6 @@
+# 项目已迁移
+## 此项目已停止更新并合并至 [cn_im_hub](https://github.com/ha-china/cn_im_hub)
+
 # 企业微信
 
 `ha_wecom` 是一个 Home Assistant 自定义集成，用于将企业微信智能机器人接入 HA，实现消息通知与对话联动。
